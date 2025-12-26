@@ -24,13 +24,22 @@ This project demonstrates **real-world backend development practices**, includin
 
 ### ⚡ Event-Driven Architecture (Kafka)
 - Apache Kafka integration for asynchronous processing
-- Event publishing on key actions (e.g., journal creation, updates)
-- Decoupled producer–consumer design
+- Event publishing on sentiment based on user's journal entries
 
 ### 🚀 Caching & Performance (Redis)
 - Redis integration for caching frequently accessed data
 - Reduced database load
 - Improved API response times
+
+### 📧 Email Notifications (Java Mail)
+- Java Mail integration for sending emails
+- Supports notifications such as sending most frequent sentiment every week
+- SMTP-based configuration using environment variables
+
+### ⏱️ Scheduled Tasks (Cron Jobs)
+- Spring Scheduler–based cron jobs to send emails
+- Supports periodic operations such as data cleanup and refreshing external APIs
+- Configurable scheduling using cron expressions
 
 ### 📚 API Documentation
 - Interactive Swagger UI (OpenAPI)
@@ -45,14 +54,19 @@ This project demonstrates **real-world backend development practices**, includin
 
 ---
 
-## 🛠️ Tech Stack
+### 🛠️ Tech Stack
 
 - **Backend:** Spring Boot 3.4.11
 - **Security:** Spring Security, JWT, OAuth2 (Google)
 - **Database:** MongoDB
+- **Messaging:** Apache Kafka
+- **Caching:** Redis
+- **Email:** Java Mail (Spring Boot Starter Mail)
+- **Scheduling:** Spring Scheduler (Cron)
 - **API Docs:** Swagger (springdoc-openapi)
 - **Build Tool:** Maven
 - **Language:** Java
+
 
 ---
 
